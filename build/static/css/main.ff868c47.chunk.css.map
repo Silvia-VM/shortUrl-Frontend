@@ -1,0 +1,1 @@
+{"version":3,"sources":["App.css"],"names":[],"mappings":"AAAA,OACE,YACF,CACA,MACE,eACF","file":"main.ff868c47.chunk.css","sourcesContent":[".cross {\n  display: flex;\n}\n.list {\n  list-style: none;\n}\n"]}
