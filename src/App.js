@@ -20,7 +20,9 @@ class App extends React.Component {
     }
   }
   update = async () => {
-    const response = await axios.get("https://short-url-backend.herokuapp.com");
+    const response = await axios.get(
+      "https://short-url-backend.herokuapp.com:8080"
+    );
     console.log(response.data);
     this.setState({
       tabLists: response.data
@@ -51,7 +53,7 @@ class App extends React.Component {
                 className="button-control"
                 onClick={async () => {
                   await axios.post(
-                    "https://short-url-backend.herokuapp.com/create",
+                    "https://short-url-backend.herokuapp.com:8080/create",
                     {
                       url: this.state.newUrl
                     }
